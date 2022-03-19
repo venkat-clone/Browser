@@ -1,0 +1,75 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.browser"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="23"
+8-->/home/venkey/AndroidStudioProjects/AndroidStudioProjects/Browser/Browser/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="30" />
+9-->/home/venkey/AndroidStudioProjects/AndroidStudioProjects/Browser/Browser/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+11-->/home/venkey/AndroidStudioProjects/AndroidStudioProjects/Browser/Browser/app/src/main/AndroidManifest.xml:5:5-79
+11-->/home/venkey/AndroidStudioProjects/AndroidStudioProjects/Browser/Browser/app/src/main/AndroidManifest.xml:5:22-76
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->/home/venkey/AndroidStudioProjects/AndroidStudioProjects/Browser/Browser/app/src/main/AndroidManifest.xml:6:5-67
+12-->/home/venkey/AndroidStudioProjects/AndroidStudioProjects/Browser/Browser/app/src/main/AndroidManifest.xml:6:22-64
+13    <uses-permission android:name="android.permission.BLUETOOTH" />
+13-->/home/venkey/AndroidStudioProjects/AndroidStudioProjects/Browser/Browser/app/src/main/AndroidManifest.xml:7:5-68
+13-->/home/venkey/AndroidStudioProjects/AndroidStudioProjects/Browser/Browser/app/src/main/AndroidManifest.xml:7:22-65
+14    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+14-->/home/venkey/AndroidStudioProjects/AndroidStudioProjects/Browser/Browser/app/src/main/AndroidManifest.xml:8:5-81
+14-->/home/venkey/AndroidStudioProjects/AndroidStudioProjects/Browser/Browser/app/src/main/AndroidManifest.xml:8:22-78
+15
+16    <application
+16-->/home/venkey/AndroidStudioProjects/AndroidStudioProjects/Browser/Browser/app/src/main/AndroidManifest.xml:10:5-31:19
+17        android:allowBackup="true"
+17-->/home/venkey/AndroidStudioProjects/AndroidStudioProjects/Browser/Browser/app/src/main/AndroidManifest.xml:11:9-35
+18        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+18-->[androidx.core:core:1.5.0] /home/venkey/.gradle/caches/transforms-3/3d009a9472caec2ed4a541e9b7d8caa3/transformed/core-1.5.0/AndroidManifest.xml:24:18-86
+19        android:debuggable="true"
+20        android:extractNativeLibs="false"
+21        android:icon="@mipmap/ic_launcher"
+21-->/home/venkey/AndroidStudioProjects/AndroidStudioProjects/Browser/Browser/app/src/main/AndroidManifest.xml:12:9-43
+22        android:label="@string/app_name"
+22-->/home/venkey/AndroidStudioProjects/AndroidStudioProjects/Browser/Browser/app/src/main/AndroidManifest.xml:13:9-41
+23        android:roundIcon="@mipmap/ic_launcher_round"
+23-->/home/venkey/AndroidStudioProjects/AndroidStudioProjects/Browser/Browser/app/src/main/AndroidManifest.xml:14:9-54
+24        android:supportsRtl="true"
+24-->/home/venkey/AndroidStudioProjects/AndroidStudioProjects/Browser/Browser/app/src/main/AndroidManifest.xml:15:9-35
+25        android:testOnly="true"
+26        android:theme="@style/Theme.Browser" >
+26-->/home/venkey/AndroidStudioProjects/AndroidStudioProjects/Browser/Browser/app/src/main/AndroidManifest.xml:16:9-45
+27        <activity
+27-->/home/venkey/AndroidStudioProjects/AndroidStudioProjects/Browser/Browser/app/src/main/AndroidManifest.xml:17:9-20:39
+28            android:name="com.example.browser.Booksmarks"
+28-->/home/venkey/AndroidStudioProjects/AndroidStudioProjects/Browser/Browser/app/src/main/AndroidManifest.xml:19:13-39
+29            android:exported="true"
+29-->/home/venkey/AndroidStudioProjects/AndroidStudioProjects/Browser/Browser/app/src/main/AndroidManifest.xml:20:13-36
+30            android:parentActivityName="com.example.browser.MainActivity" />
+30-->/home/venkey/AndroidStudioProjects/AndroidStudioProjects/Browser/Browser/app/src/main/AndroidManifest.xml:18:13-55
+31        <activity
+31-->/home/venkey/AndroidStudioProjects/AndroidStudioProjects/Browser/Browser/app/src/main/AndroidManifest.xml:21:9-23:58
+32            android:name="com.example.browser.Tabes_Activity"
+32-->/home/venkey/AndroidStudioProjects/AndroidStudioProjects/Browser/Browser/app/src/main/AndroidManifest.xml:22:13-43
+33            android:parentActivityName="com.example.browser.MainActivity" />
+33-->/home/venkey/AndroidStudioProjects/AndroidStudioProjects/Browser/Browser/app/src/main/AndroidManifest.xml:23:13-55
+34        <activity android:name="com.example.browser.MainActivity" >
+34-->/home/venkey/AndroidStudioProjects/AndroidStudioProjects/Browser/Browser/app/src/main/AndroidManifest.xml:24:9-30:20
+34-->/home/venkey/AndroidStudioProjects/AndroidStudioProjects/Browser/Browser/app/src/main/AndroidManifest.xml:24:19-47
+35            <intent-filter>
+35-->/home/venkey/AndroidStudioProjects/AndroidStudioProjects/Browser/Browser/app/src/main/AndroidManifest.xml:25:13-29:29
+36                <action android:name="android.intent.action.MAIN" />
+36-->/home/venkey/AndroidStudioProjects/AndroidStudioProjects/Browser/Browser/app/src/main/AndroidManifest.xml:26:17-69
+36-->/home/venkey/AndroidStudioProjects/AndroidStudioProjects/Browser/Browser/app/src/main/AndroidManifest.xml:26:25-66
+37
+38                <category android:name="android.intent.category.LAUNCHER" />
+38-->/home/venkey/AndroidStudioProjects/AndroidStudioProjects/Browser/Browser/app/src/main/AndroidManifest.xml:28:17-77
+38-->/home/venkey/AndroidStudioProjects/AndroidStudioProjects/Browser/Browser/app/src/main/AndroidManifest.xml:28:27-74
+39            </intent-filter>
+40        </activity>
+41    </application>
+42
+43</manifest>

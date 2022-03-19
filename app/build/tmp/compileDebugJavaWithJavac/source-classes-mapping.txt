@@ -1,0 +1,30 @@
+com/example/browser/Adapter/Tab_Adapter.java
+ com.example.browser.Adapter.Tab_Adapter
+ com.example.browser.Adapter.Tab_Adapter$ViewHolder
+com/example/browser/Booksmarks.java
+ com.example.browser.Booksmarks
+com/example/browser/modal/Tabs.java
+ com.example.browser.modal.Tabs
+com/example/browser/Adapter/Bookmark_Adapter.java
+ com.example.browser.Adapter.Bookmark_Adapter
+ com.example.browser.Adapter.Bookmark_Adapter$1
+ com.example.browser.Adapter.Bookmark_Adapter$ViewHolder
+ com.example.browser.Adapter.Bookmark_Adapter$ViewHolder$1
+com/example/browser/MainActivity.java
+ com.example.browser.MainActivity
+ com.example.browser.MainActivity$1
+ com.example.browser.MainActivity$2
+ com.example.browser.MainActivity$MyWebChrome
+ com.example.browser.MainActivity$MyWebViewClient
+com/example/browser/database/DataBase.java
+ com.example.browser.database.DataBase
+com/example/browser/Tabes_Activity.java
+ com.example.browser.Tabes_Activity
+com/example/browser/database/Others.java
+ com.example.browser.database.Others
+com/example/browser/modal/Bookmarks_modal.java
+ com.example.browser.modal.Bookmarks_modal
+com/example/browser/BuildConfig.java
+ com.example.browser.BuildConfig
+com/example/browser/Interface/Tabinterface.java
+ com.example.browser.Interface.Tabinterface

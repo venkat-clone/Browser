@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/appbar"
+                android:elevation="30dp"
+                app:liftOnScroll="false"
+                android:layout_height="?attr/actionBarSize"
+                android:backgroundTint="@color/white"
+                >
+
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="360"
+                    tools:ignore="UselessParent">
+
+                    <FrameLayout
+                        android:id="@+id/home"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="40"
+                        android:background="#00000000"
+                        android:padding="5dp"
+
+                        >
+
+                        <ImageView
+
+                            android:id="@+id/icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="2.5dp"
+                            android:scaleX="1.2"
+                            android:scaleY="1.2"
+                            android:src="@drawable/ic_round_home_24" />
+                    </FrameLayout>
+
+                    <android.widget.SearchView
+                        android:id="@+id/search"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="300"
+                        android:background="#00000000"
+
+                        />
+
+                    <FrameLayout
+                        android:id="@+id/tabs"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="50">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:onClick="openTabs"
+                            android:padding="2dp"
+                            android:scaleX="1.3"
+                            android:scaleY="1.3"
+                            android:src="@drawable/ic_baseline_crop_square_24" />
+                    </FrameLayout>
+
+                    <Button
+                        android:id="@+id/opctions"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="30"
+                        android:background="@drawable/dots"
+                        android:onClick="Show" />
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </RelativeLayout>
+
+
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:background="#00000000"
+                android:indeterminate="true"
+                android:visibility="gone"
+                android:layout_below="@id/appbar" />
+
+            <WebView
+                android:id="@+id/web"
+                android:layout_below="@id/progress_bar"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="match_parent"/>
+
+            <LinearLayout
+                android:id="@+id/home_screem"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/appbar"
+                android:layout_marginTop="-3dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/opctions_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#45000000"
+            android:animateLayoutChanges="true"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:layout_marginTop="0dp"
+            android:layout_gravity="right"
+            android:foregroundGravity="right"
+            android:weightSum="10"
+            android:onClick="Close"
+            >
+
+            <com.google.android.material.navigation.NavigationView
+
+                android:layout_margin="4.5dp"
+                android:layout_marginRight="4.5dp"
+                android:layout_marginTop="40dp"
+                android:paddingTop="50dp"
+                android:padding="0dp"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:layout_weight="8.12"
+                android:layout_gravity="right"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/opctions_bg"
+                >
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/action_bar"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="@drawable/round_cornor_top"
+                        android:orientation="horizontal"
+                        android:paddingTop="5dp"
+                        android:weightSum="3">
+
+                        <Button
+                            android:id="@+id/back"
+                            android:layout_width="40dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:background="@drawable/ic_baseline_arrow_back_24"
+                            android:onClick="go_back" />
+
+                        <Button
+                            android:id="@+id/front"
+                            android:layout_width="40dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:background="@drawable/ic_baseline_arrow_forward_24"
+                            android:onClick="go_forword"
+                            android:padding="5dp" />
+
+
+                        <Button
+                            android:id="@+id/reload"
+                            android:onClick="reload"
+                            android:layout_width="40dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:background="@drawable/ic_sharp_refresh_24"
+                            android:padding="5dp" />
+                    </LinearLayout>
+                    <RelativeLayout
+                        android:clickable="true"
+                        android:foreground="?android:selectableItemBackgroundBorderless"
+                        android:onClick="Create_Tab"
+                        android:id="@+id/NewTab"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_below="@id/Vpn">
+                        <FrameLayout
+                            android:id="@+id/ss"
+                            android:layout_margin="3dp"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_centerVertical="true"
+                            android:foregroundGravity="center_vertical">
+                            <ImageView
+                                android:layout_gravity="center"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:src="@drawable/ic_baseline_crop_square_24"/>
+                            <ImageView
+                                android:layout_gravity="center"
+                                android:padding="0dp"
+                                android:layout_width="17dp"
+                                android:layout_height="17dp"
+                                android:src="@drawable/ic_baseline_add_24"/>
+                        </FrameLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toEndOf="@+id/ss"
+                            android:padding="3dp"
+                            android:text="New tab"
+                            android:textColor="#2B2B2B"
+                            android:textSize="15dp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/Download"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/NewTab"
+                        android:gravity="center_vertical">
+
+
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:onClick="Bookmark"
+                        android:id="@+id/Bookmark_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Download"
+                        android:gravity="center_vertical">
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/Share"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Bookmark_button"
+                        android:gravity="center_vertical"
+                        android:onClick="Share_url">
+
+                        <ImageView
+                            android:id="@+id/s3"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_margin="3dp"
+                            android:padding="3dp"
+                            android:scaleX="0.7"
+                            android:scaleY="0.7"
+                            android:src="@drawable/ic_baseline_share_24" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toEndOf="@+id/s3"
+                            android:padding="3dp"
+                            android:text="Share"
+
+                            android:textColor="#2B2B2B"
+
+                            android:textSize="15dp" />
+
+                        <androidx.appcompat.widget.AppCompatImageButton
+                            android:layout_width="50dp"
+                            android:layout_height="45dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginBottom="0dp"
+                            android:backgroundTint="@color/white"
+                            android:onClick="copy_url"
+                            android:src="@drawable/ic_baseline_content_copy_24" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/DeskTop"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Share"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:id="@+id/s4"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginStart="3dp"
+                            android:layout_marginTop="3dp"
+                            android:layout_marginEnd="3dp"
+
+                            android:layout_marginBottom="3dp"
+                            android:padding="3dp"
+                            android:scaleX="0.7"
+                            android:scaleY="0.7"
+                            android:src="@drawable/ic_baseline_desktop_windows_24" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toEndOf="@+id/s4"
+                            android:padding="3dp"
+                            android:text="Desktop"
+                            android:textColor="#2B2B2B"
+
+
+                            android:textSize="15dp" />
+
+                        <CheckBox
+                            android:layout_margin="3dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:id="@+id/check"
+                            />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/Find"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/DeskTop"
+                        android:gravity="center_vertical">
+
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/Settings"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Find"
+                        android:gravity="center_vertical">
+
+
+
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/Vpn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/action_bar"
+                        android:gravity="center_vertical">
+
+
+
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </com.google.android.material.navigation.NavigationView>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

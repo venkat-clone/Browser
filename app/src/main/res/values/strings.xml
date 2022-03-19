@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Browser</string>
+    <string name="navigation_drawer_open">open</string>
+    <string name="navigation_drawer_close">close</string>
+    <string-array name="Country">
+        <item>Off</item>
+        <item>india</item>
+        <item>us</item>
+        <item>china</item>
+        <item>Ressia</item>
+    </string-array>
+    <string-array name="search_engeen">
+        <item name="https://google.com?quary=">google</item>
+    </string-array>
+</resources>
